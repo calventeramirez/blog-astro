@@ -1,48 +1,40 @@
-# Astro Starter Kit: Basics
+# 📰  Blog en Astro
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+Un blog de noticias construido con [Astro](https://astro.build/), utilizando archivos Markdown (`.md`) y MDX (`.mdx`) para la gestión de contenido. El blog permite visualizar autores, categorías y artículos en una interfaz optimizada y rápida.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🚀 Características
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- 📄 Soporte para Markdown y MDX.
+- 👥 Gestión de autores con perfiles.
+- 🏷️ Categorización de artículos.
+- ⚡ Optimizado para rendimiento y SEO.
+- 🎨 Interfaz personalizable con Astro Components.
+- 🔗 Enlaces sociales y metadatos para compartir.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 📦 Instalación
 
-## 🚀 Project Structure
+1. Clona el repositorio:
+   ```sh
+   git clone https://github.com/tu-usuario/astro-news-blog.git
+   cd blog-astro
+   ```
+2. Instala las dependencias:
+   ```sh
+   pnpm install
+   ```
+3. Inicia el entorno de desarrollo:
+   ```sh
+   pnpm dev
+   ```
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 Despliegue
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Puedes desplegar el blog en plataformas como:
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
+- [Cloudflare Pages](https://pages.cloudflare.com/)
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 🧞 Commands
+## 📜 Licencia
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Este proyecto está bajo la licencia MIT. ¡Siéntete libre de contribuir y mejorarlo! 🎉

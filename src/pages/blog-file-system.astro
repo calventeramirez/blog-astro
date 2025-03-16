@@ -1,10 +1,13 @@
 ---
-import { getCollection } from "astro:content";
 import { siteConfig } from "../conf/site-config";
 import Layout from "../layouts/Layout.astro";
-import TypedBlogPost from "src/components/TypedBlogPost.astro";
+import BlogPost from "../components/BlogPost.astro";
 
-const blogPost = await getCollection("blog", (post) => post.data.isDraft === false);
+// const matches = import.meta.glob('./posts/*.{md, mdx}', { eager: true });
+// const posts = Object.values(matches);
+const posts = await Astro.glob("./posts-old/*.{md,mdx}");
+console.log(posts);
+
 ---
 
 <Layout title="Blog de Pablo">
@@ -17,11 +20,12 @@ const blogPost = await getCollection("blog", (post) => post.data.isDraft === fal
         {siteConfig.title}
       </h1>
 
-      <a class = "mr-2 text-blue-500" href="/blog/1" class="text-blue-500 hover:underline">Blog paginado</a>
-      <a class = "mr-2 text-blue-500" href="/authors" class="text-blue-500 hover:underline">Autores</a>
-
       <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
-        {blogPost.map((post) => <TypedBlogPost post={post} />)}
+		{
+			posts.map(post => (
+				<BlogPost {...post}/>
+			))
+		}
       </div>
     </div>
   </section>
